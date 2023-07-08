@@ -7,7 +7,7 @@ public:
         
         string first=strs[0], last=strs[len-1];
         
-        for(int i=0; i<first.size(); i++){
+        for(int i=0; i<min(first.size(),last.size()); i++){
             if(first[i]!=last[i]){
                 return common;
             }
