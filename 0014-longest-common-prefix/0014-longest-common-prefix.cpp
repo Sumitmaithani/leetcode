@@ -6,8 +6,7 @@ public:
         string lastCommon="";
         
         if(strs.size()==1){
-            common=strs[0];
-            return common;
+            return strs[0];
         }
         
         for(int i=1; i<strs.size(); i++){
@@ -41,7 +40,6 @@ public:
                  common=commonArray[i];
              }
          }
-        cout<<lastCommon;
         
         return common;
     }
