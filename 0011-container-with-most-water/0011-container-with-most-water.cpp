@@ -12,7 +12,6 @@ public:
                 temp=(right-left)*height[right];
                 right--;
             }
-                cout<<temp<<' ';
             if(temp>max){
                 max=temp;
             }
