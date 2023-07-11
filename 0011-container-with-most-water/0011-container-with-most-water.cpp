@@ -3,7 +3,7 @@ public:
     int maxArea(vector<int>& height) {
         int maxwater=0, left=0, right=height.size()-1;
         
-        while(left<=right){
+        while(left<right){
             int w=right-left;
             int h=min(height[left],height[right]);
             int area=w*h;
@@ -11,7 +11,7 @@ public:
             
             if(height[left]<height[right]){
                 left++;
-            }else if (height[left]>height[right]){
+            } else if (height[left]>height[right]){
                 right--;
             } else{
                 left++;
