@@ -9,7 +9,7 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        set<ListNode*> st;
+        unordered_set<ListNode*> st;
         while(head!=NULL){
             if(st.find(head)!=st.end()) return head;
             st.insert(head);
