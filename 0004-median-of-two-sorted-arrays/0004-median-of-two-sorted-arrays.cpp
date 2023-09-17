@@ -9,7 +9,6 @@ public:
         if(n%2!=0){
             return (double) nums1[n/2];
         }
-        double sum = ((double) nums1[n/2-1] + (double) nums1[n/2])/2;
-        return sum;
+        return ((double) nums1[n/2-1] + (double) nums1[n/2])/2;;
     }
 };
