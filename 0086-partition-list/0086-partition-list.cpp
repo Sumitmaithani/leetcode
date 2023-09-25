@@ -30,7 +30,9 @@ public:
         }
         greater->next=NULL;
         smaller->next=greaterHead->next;
+        delete greaterHead;
         head=smallerHead->next;
+        delete smallerHead;
         return head;
     }
 };
